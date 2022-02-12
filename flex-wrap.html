@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex wrap</title>
+    
+    <style>
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid darkturquoise;
+            max-width: 310px;
+            flex-direction: column;
+        }
+
+        .item{
+            font-size: 24px;
+            height: 50%;
+            min-width: 100px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+
+        .darkgray{
+            background-color:darkgray;    
+        }
+
+        .darkred{
+            background-color:  darkred;
+        }
+
+        .darkgoldenrod{
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1 >now rap</h1>
+
+    <div class="flex-container nowrap">
+        <div class="item darkgray">1</div>
+        <div class="item darkred">2</div>
+        <div class="item darkgoldenrod">3</div>
+        <div class="item darkgray">4</div>
+    </div>
+
+    <h1 >wrap</h1>
+
+    <div class="flex-container wrap">
+        <div class="item darkgray">1</div>
+        <div class="item darkred">2</div>
+        <div class="item darkgoldenrod">3</div>
+        <div class="item darkgray">4</div>
+    </div>
+
+    <h1 >wrap reverse</h1>
+
+    <div class="flex-container wrap-reverse">
+        <div class="item darkgray">1</div>
+        <div class="item darkred">2</div>
+        <div class="item darkgoldenrod">3</div>
+        <div class="item darkgray">4</div>
+    </div>
+    
+</body>
+</html>
