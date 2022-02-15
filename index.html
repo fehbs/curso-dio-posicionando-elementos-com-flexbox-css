@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Justify Content</title>
+    <style>
+        .container{
+            max-width: 613px;
+            height: 79px;
+            border: 5px solid black;
+            margin:0;
+            display: flex;
+            margin-bottom: 27px;
+            background-color: rgb(17, 228, 52);
+        }
+
+        .item{
+            background-color: black;
+            margin: 5px;
+            text-align: center;
+            color: rgb(17, 228, 52);
+            line-height:calc(3);
+            font-size: 22px;
+            border: solid white 3px;
+            width: 79px;
+            height:calc(3);
+        }
+         
+        .flex-start{
+            justify-content: flex-start;
+            font-style: italic;
+        }  
+
+        .flex-end{
+            justify-content: flex-end;
+            font-style: oblique;
+        }
+        .center{
+            justify-content: center;
+            font-family: monospace;
+        }
+
+        .space-between{
+            justify-content: space-between;
+            font-family: fantasy;
+        }
+
+        .space-around{
+            justify-content: space-around;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+     
+    </style>
+</head>
+<body>
+     <h1>flex-start</h1>
+     <section class="container flex-start">
+         <div class="item">Back</div>
+         <div class="item">to</div>
+         <div class="item">the</div>
+         <div class="item">Future</div>
+         <div class="item">1</div>
+     </section>
+
+     <h1>flex-end</h1>
+     <section class="container flex-end">
+         <div class="item">Back</div>
+         <div class="item">to</div>
+         <div class="item">the</div>
+         <div class="item">Future</div>
+         <div class="item">2</div>
+     </section>
+
+     <h1>center</h1> 
+     <section class="container center">
+         <div class="item">Back</div>
+         <div class="item">to</div>
+         <div class="item">the</div>
+         <div class="item">Future</div>
+         <div class="item">3</div>
+     </section>
+
+     <h1>space-between</h1>
+     <section class="container space-between">
+         <div class="item">Bif</div>
+         <div class="item">MartinM</div>
+         <div class="item">Doc</div>
+         <div class="item">Einstein</div>
+         <div class="item">Delorean</div>
+     </section>
+
+     <h1>space-around</h1>
+     <section class="container space-around">
+         <div class="item">Qual</div>
+         <div class="item">é o</div>
+         <div class="item">seu</div>
+         <div class="item">favorito</div>
+         <div class="item">????</div>
+     </section>
+</body>
+</html>
